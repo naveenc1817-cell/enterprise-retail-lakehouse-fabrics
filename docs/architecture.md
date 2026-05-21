@@ -27,21 +27,58 @@ Wait Activity
    ↓
 Incremental MERGE Notebook
    ↓
-Wait Activity 
+Wait Activity
    ↓
 Data Quality Validation Notebook
    ↓
 Power BI Dashboard
+```
 
+## Design Explanation
+
+ADLS Gen2 acts as the external source landing zone.
+
+Fabric Data Pipeline copies raw files into OneLake Bronze storage.
+
+PySpark notebooks process the data through Bronze, Silver, and Gold layers.
+
+Delta Lake is used for:
+
+- ACID transactions
+- Delta versioning
+- MERGE upserts
+- Partitioning
+- Optimization
+
+Power BI consumes Gold tables for analytics and operational reporting.
+
+## Production Design Decisions
+
+- ADLS Gen2 used as source storage
+- OneLake used as Fabric-native lakehouse storage
+- Delta tables used for ACID transactions
+- Medallion architecture implemented
+- MERGE used for incremental processing
+- Data quality checks persisted for monitoring
+- Gold tables partitioned by year and month
+
+## Spark Capacity Handling
+
+Fabric trial or limited capacity can hit Spark concurrency or API rate limits when multiple notebook activities start too quickly.
+
+To reduce this issue, Wait activities were added between notebook executions.
+
+Benefits:
+
+- Improved pipeline stability
+- Reduced Spark contention
+- Better sequential orchestration
+- Fewer TooManyRequestsForCapacity errors
 
 ## Wait Activity Design
 
-Wait activities are included between notebook executions to reduce Spark session contention and capacity throttling.
-
-This was added because Fabric capacity can return TooManyRequestsForCapacity errors when notebook jobs are triggered too quickly.
-
 Recommended wait duration:
 
-
-60 to 120 seconds
 ```text
+60 to 120 seconds
+```
