@@ -34,7 +34,7 @@ Data Quality Validation Notebook
 Power BI Dashboard
 
 
-## Wait Activity Design
+**## Wait Activity Design**
 
 Wait activities are included between notebook executions to reduce Spark session contention and capacity throttling.
 
