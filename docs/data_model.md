@@ -1,6 +1,3 @@
-
-## `docs/data_model.md`
-
 ```markdown
 # Data Model
 
