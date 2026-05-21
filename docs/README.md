@@ -40,3 +40,4 @@ Wait Activity
 Incremental MERGE Notebook
 
 For detailed architecture, see [Architecture Diagram](../architecture/architecture_diagram.md).
+**remove all triple backticks** from `docs/README.md`.
