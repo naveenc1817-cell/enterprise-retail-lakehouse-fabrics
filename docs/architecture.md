@@ -32,7 +32,7 @@ Wait Activity
 Data Quality Validation Notebook
    ↓
 Power BI Dashboard
-```text
+
 
 ## Wait Activity Design
 
@@ -41,5 +41,6 @@ Wait activities are included between notebook executions to reduce Spark session
 This was added because Fabric capacity can return TooManyRequestsForCapacity errors when notebook jobs are triggered too quickly.
 
 Recommended wait duration: 60 to 120 seconds
+```text
 
 
