@@ -45,5 +45,3 @@ Recommended wait duration:
 ```text
 60 to 120 seconds
 ```
-
-
