@@ -1,4 +1,3 @@
-```markdown
 # Data Model
 
 ## Source Tables
@@ -36,7 +35,7 @@
 
 ## Gold Sales Fact
 
-The `gold.sales_fact` table combines orders, customers, products, sellers, payments, and order items into one analytics-ready table for Power BI reporting.
+The gold.sales_fact table combines orders, customers, products, sellers, payments, and order items into one analytics-ready table for Power BI reporting.
 
 Important fields:
 
