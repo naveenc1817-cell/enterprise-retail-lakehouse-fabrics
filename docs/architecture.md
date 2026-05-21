@@ -6,6 +6,7 @@ This project implements an enterprise retail lakehouse architecture using Micros
 
 ## Architecture Flow
 
+```text
 ADLS Gen2
    ↓
 Fabric Data Pipeline
@@ -31,7 +32,7 @@ Wait Activity
 Data Quality Validation Notebook
    ↓
 Power BI Dashboard
-
+```text
 
 ## Wait Activity Design
 
