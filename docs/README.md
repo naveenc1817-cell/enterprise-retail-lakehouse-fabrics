@@ -6,7 +6,6 @@ This project implements an end-to-end enterprise retail lakehouse pipeline using
 
 The goal of this project is to build a production-style data engineering solution that ingests raw retail data, transforms it through Bronze, Silver, and Gold layers, supports incremental upserts using Delta MERGE, validates data quality, and serves analytics through Power BI.
 
----
 
 ## Business Problem
 
@@ -14,11 +13,8 @@ Retail organizations receive data from multiple systems such as customers, order
 
 This project solves that problem by creating a reliable lakehouse pipeline that converts raw files into clean, validated, analytics-ready Gold tables for business reporting.
 
----
-
 ## Architecture
 
-```text
 ADLS Gen2
    ↓
 Fabric Data Pipeline
@@ -40,4 +36,3 @@ Wait Activity
 Incremental MERGE Notebook
 
 For detailed architecture, see [Architecture Diagram](../architecture/architecture_diagram.md).
-**remove all triple backticks** from `docs/README.md`.
