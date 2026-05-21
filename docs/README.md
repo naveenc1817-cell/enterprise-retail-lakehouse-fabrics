@@ -47,5 +47,5 @@ Wait Activity
 Data Quality Validation Notebook
    ↓
 Power BI Dashboard
-```markdown
+
 For detailed architecture, see [Architecture Diagram](../architecture/architecture_diagram.md).
