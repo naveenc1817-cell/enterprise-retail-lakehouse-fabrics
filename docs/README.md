@@ -38,5 +38,5 @@ Gold Sales Fact Notebook
 Wait Activity
    ↓
 Incremental MERGE Notebook
-```markdown
+
 For detailed architecture, see [Architecture Diagram](../architecture/architecture_diagram.md).
