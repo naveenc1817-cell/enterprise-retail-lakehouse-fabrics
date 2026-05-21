@@ -20,8 +20,6 @@ Audit columns:
 
 The Silver layer standardizes and cleans the raw data.
 
-Transformations:
-
 | Transformation | Purpose |
 |---|---|
 | Deduplication | Removes duplicate business records |
@@ -35,7 +33,22 @@ Transformations:
 
 The Gold layer builds business-ready analytics tables.
 
-The main Gold table is:
+The main Gold table is gold.sales_fact.
 
-```text
-gold.sales_fact
+This table joins:
+
+- silver.orders
+- silver.customers
+- silver.order_items
+- silver.products
+- silver.sellers
+- silver.payments
+
+Calculated metric:
+
+total_sale_amount = price + freight_value
+
+Partition columns:
+
+- order_year
+- order_month
