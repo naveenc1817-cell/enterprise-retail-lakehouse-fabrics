@@ -38,6 +38,11 @@ Gold Sales Fact Notebook
 Wait Activity
    ↓
 Incremental MERGE Notebook
+
+Also add this line in your main `README.md` under Architecture:
+
+```markdown
+For detailed architecture, see [Architecture Diagram](architecture/architecture_diagram.md).
    ↓
 Wait Activity
    ↓
