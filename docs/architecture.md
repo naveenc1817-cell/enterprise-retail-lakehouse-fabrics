@@ -42,6 +42,6 @@ This was added because Fabric capacity can return TooManyRequestsForCapacity err
 
 Recommended wait duration:
 
-```text
+
 60 to 120 seconds
-```
+```text
