@@ -38,14 +38,5 @@ Gold Sales Fact Notebook
 Wait Activity
    ↓
 Incremental MERGE Notebook
-
-Also add this line in your main `README.md` under Architecture:
-For detailed architecture, see [Architecture Diagram](architecture/architecture_diagram.md).
-   ↓
-Wait Activity
-   ↓
-Data Quality Validation Notebook
-   ↓
-Power BI Dashboard
-
+```markdown
 For detailed architecture, see [Architecture Diagram](../architecture/architecture_diagram.md).
